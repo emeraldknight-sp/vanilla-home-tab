@@ -1,0 +1,17 @@
+{
+  "name": "vanilla-home-tab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Página desenvolvida para avaliação de teste técnico na empresa Falqon, criado e desenvolvido com Vanilla.JS",
+  "author": "David Almeida",
+  "scripts": {
+    "write": "prettier --write .",
+    "check": "prettier --check ."
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.4"
+  }
+}
