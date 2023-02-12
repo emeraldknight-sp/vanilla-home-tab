@@ -1,0 +1,275 @@
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  background-image: url("../assets/img/empire-state.png");
+  background-origin: content-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 100px;
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  line-height: 48px;
+  width: 75%;
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));
+  color: var(--white);
+}
+
+/* BOX */
+
+.header .box {
+  opacity: 0.91;
+  border-radius: 2px;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.53));
+  background: #272727;
+}
+
+/* BOX HEADER */
+
+.header .box__header {
+  display: flex;
+}
+
+.header .box__header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 32px;
+  padding: 8px 12px;
+  opacity: 0.74;
+}
+
+.header .box__header div p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header .box__header div:nth-child(1) {
+  border-radius: 2px 0 0 0;
+  background: var(--green);
+}
+
+.header .box__header div:nth-child(2) {
+  border-radius: 0 2px 0 0;
+  background: #212121;
+}
+
+/* BOX INFO */
+
+.box__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+}
+
+.box__info .divider {
+  border-bottom: 1px solid #8b8b8b;
+  flex: 1;
+}
+
+/* BOX ROUTE */
+
+.header .box__route {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header .box__route div h2 {
+  color: var(--white);
+  font-size: var(--text-h2);
+  line-height: var(--line-height-h2);
+  font-weight: bolder;
+}
+
+.header .box__route div p {
+  opacity: 0.5;
+  color: var(--white);
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.header .box__route div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+.header .box__route div:nth-child(2) .divider {
+  border-bottom: 1px solid #8b8b8b;
+  flex: 1;
+}
+
+.header .box__route div:nth-child(2) .fa-plane {
+  color: #8b8b8b;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0 8px;
+}
+
+/* BOX DETAILS */
+
+.header .box__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.header .box__details div {
+  display: flex;
+  flex-direction: column;
+  flex: 1 70px;
+}
+
+.header .box__details div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  flex: 1 140px;
+}
+
+.header .box__details div p {
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header .box__details div p:nth-child(1) {
+  opacity: 0.5;
+  font-size: 11px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.header .box__details div p:nth-child(2) {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* BOX BUTTON */
+
+.header .box__details div button {
+  width: 180px;
+  height: 46px;
+  color: var(--white);
+  text-transform: uppercase;
+  background-color: #431c60;
+  border: 1px solid #431c60;
+  border-radius: 4px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.header .box__details div button:active {
+  background-color: #2c0f41;
+  border: 1px solid #2c0f41;
+
+}
+
+.header .box__details div button span {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 37px;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* MAIN */
+
+.main {
+  background-color: #261136;
+  padding-top: 120px;
+}
+
+.main .plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .plans .button {
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+  padding: 21px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  background-color: var(--dark-purple);
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer .menu {
+  display: flex;
+}
+
+.footer .menu .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  padding: 20px 25px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #A28EB0;
+  cursor: pointer;
+}
+
+.footer .menu .button .fa-plane {
+  transform: rotate(-45deg)
+}
+
+.footer .menu .button:active {
+  color: var(--white);
+}
+
+.footer .menu .button:hover {
+  color: var(--white);
+}
+
+.footer .menu .button i {
+  font-size: 1rem;
+}
+
+/* BUTTON */
+
+.button {
+  cursor: pointer;
+}
+
+* {
+  color: var(--white);
+}

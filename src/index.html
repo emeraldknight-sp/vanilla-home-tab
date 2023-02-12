@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <!-- TITLE -->
     <title>Home Tab - Teste Técnico</title>
 
@@ -22,61 +21,77 @@
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header id="header">
-      <section class="container">
-        <h1>Let's get you there...</h1>
-        <div>
-          <div>
-            <div>Boarding now</div>
-            <div>Gate closes at 10:00</div>
-          </div>
-          <div>
-            <div>
-              <h2>LHR</h2>
-              <p>London, England</p>
-            </div>
-            <div>
-              <span>icon</span>
-            </div>
-            <div>
-              <h2>JFK</h2>
-              <p>New York City, USA</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Flight</p>
-              <span>VA2501</span>
-            </div>
-            <div>
-              <p>Seat</p>
-              <span>35a</span>
-            </div>
-            <div>
-              <p>Gate</p>
-              <span>34B</span>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Departs</p>
-              <span>10.25</span>
-            </div>
-            <div>
-              <button>View boarding pass</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-    <main id="main">
+    <header id="header" class="header">
       <section class="container">
         <article>
-          <div>
+          <h1>Let's get you there...</h1>
+          <div class="box">
+            <div class="box__header">
+              <div><p>Boarding now</p></div>
+              <div><p>Gate closes at 10:00</p></div>
+            </div>
+            <div class="box__info">
+              <div class="box__route">
+                <div>
+                  <h2>LHR</h2>
+                  <p>London, England</p>
+                </div>
+                <div>
+                  <div class="divider"></div>
+                  <i class="fa-solid fa-plane"></i>
+                  <div class="divider"></div>
+                </div>
+                <div>
+                  <h2>JFK</h2>
+                  <p>New York City, USA</p>
+                </div>
+              </div>
+              <div>
+                <div class="divider"></div>
+              </div>
+              <div class="box__details">
+                <div>
+                  <p>Flight</p>
+                  <p>VA2501</p>
+                </div>
+                <div>
+                  <p>Seat</p>
+                  <p>35a</p>
+                </div>
+                <div>
+                  <p>Gate</p>
+                  <p>34B</p>
+                </div>
+                <div>
+                  <p>Departs</p>
+                  <p>10.25</p>
+                </div>
+                <div>
+                  <button>
+                    <span>View boarding pass</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </header>
+    <main id="main" class="main">
+      <section class="container">
+        <article>
+          <div class="plans">
             <h3>Your Plans</h3>
-            <button>+</button>
+            <button type="button" class="button"><i class="fa-solid fa-plus"></i></button>
           </div>
           <div>
             <div>
@@ -142,30 +157,30 @@
           </div>
           <div>
             <div>
-              <figure>
-                <img src="" alt="" />
-              </figure>
+              <button type="button" class="button">
+                <i class="fa-solid fa-taxi"></i>
+              </button>
               <span>$60-$105</span>
               <p>TAXI</p>
             </div>
             <div>
-              <figure>
-                <img src="" alt="" />
-              </figure>
+              <button type="button" class="button">
+                <i class="fa-solid fa-train-subway"></i>
+              </button>
               <span>$20-$30</span>
               <p>SUBWAY</p>
             </div>
             <div>
-              <figure>
-                <img src="" alt="" />
-              </figure>
+              <button type="button" class="button">
+                <i class="fa-solid fa-taxi"></i>
+              </button>
               <span>$45-$65</span>
               <p>UBER</p>
             </div>
             <div>
-              <figure>
-                <img src="" alt="" />
-              </figure>
+              <button type="button" class="button">
+                <i class="fa-solid fa-taxi"></i>
+              </button>
               <span>$45-$65</span>
               <p>UBER</p>
             </div>
@@ -173,20 +188,22 @@
         </article>
       </section>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="footer">
       <section class="container">
-        <figure>
-          <img src="" alt="" />
-        </figure>
-        <figure>
-          <img src="" alt="" />
-        </figure>
-        <figure>
-          <img src="" alt="" />
-        </figure>
-        <figure>
-          <img src="" alt="" />
-        </figure>
+        <nav class="menu">
+          <button type="button" class="button">
+            <i class="fa-solid fa-plane"></i>
+          </button>
+          <button type="button" class="button">
+            <i class="fa-solid fa-compass"></i>
+          </button>
+          <button type="button" class="button">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <button type="button" class="button">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </nav>
       </section>
     </footer>
   </body>
