@@ -3,6 +3,18 @@
   margin: 0 auto;
 }
 
+.divider__group {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 100%;
+}
+
+.divider {
+  border-bottom: 1px solid #8b8b8b;
+  flex: 1;
+}
+
 /* HEADER */
 .header {
   background-image: url("../assets/img/empire-state.png");
@@ -181,7 +193,6 @@
 .header .box__details div button:active {
   background-color: #2c0f41;
   border: 1px solid #2c0f41;
-
 }
 
 .header .box__details div button span {
@@ -201,18 +212,158 @@
   padding-top: 120px;
 }
 
+.main .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* PLANS */
+
 .main .plans {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.main .plans h3 {
+  color: var(--blue);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 .main .plans .button {
   background-color: var(--purple);
   border: 1px solid var(--purple);
   border-radius: 50%;
-  padding: 21px;
+  padding: 16px;
 }
+
+.main .plans .button i {
+  font-size: 20px;
+}
+
+/* HOTEL */
+
+.main .hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+  background-image: url("../assets/img/hotel.png");
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* max-width: 340px; */
+  height: 280px;
+}
+
+.main .hotel .hotel__description {
+  background: #212121;
+  width: 100%;
+  padding: 15px;
+}
+
+.main .hotel .description__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main .hotel .description__name h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 33px;
+}
+
+.main .hotel .description__name div {
+  height: 24px;
+  background: #7b1fa2;
+  background: linear-gradient(-139deg, #7b1fa2 0%, #4527a0 100%);
+  padding: 0 8px;
+}
+
+.main .hotel .description__name span {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.main .hotel .description__location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.main .hotel .description__location i {
+  font-size: 16px;
+}
+
+.main .hotel .description__location p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* ROUTE */
+
+.main .route {
+  background-image: url("../assets/img/car.png");
+  border-radius: 2px;
+}
+.main .route .route__description {
+  display: flex;
+  flex-direction: column;
+  background: #000000;
+  background: linear-gradient(-135deg, #000000 0%, rgba(44, 44, 44, 0.71) 100%);
+  padding: 15px;
+}
+
+.main .route .description__message {
+  display: flex;
+  gap: 8px;
+}
+
+.main .route .description h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.main .route .description p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.main .route .description span {
+  color: var(--green);
+}
+
+.main .route .description__pickup,
+.main .route .description__destination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main .route .description__pickup button,
+.main .route .description__destination button {
+  background-color: var(--purple);
+  /* padding: 1rem; */
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+}
+
+/* DESTINATION */
+
 
 /* FOOTER */
 
@@ -244,12 +395,12 @@
   padding: 20px 25px;
   background-color: transparent;
   border: 1px solid transparent;
-  color: #A28EB0;
+  color: #a28eb0;
   cursor: pointer;
 }
 
 .footer .menu .button .fa-plane {
-  transform: rotate(-45deg)
+  transform: rotate(-45deg);
 }
 
 .footer .menu .button:active {
@@ -267,6 +418,8 @@
 /* BUTTON */
 
 .button {
+  background: transparent;
+  border: none;
   cursor: pointer;
 }
 
