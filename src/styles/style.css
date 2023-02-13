@@ -6,7 +6,7 @@
 .divider__group {
   display: flex;
   align-items: center;
-  height: 32px;
+  height: 24px;
   width: 100%;
 }
 
@@ -313,11 +313,13 @@
 
 .main .route {
   background-image: url("../assets/img/car.png");
+  background-repeat: no-repeat;
   border-radius: 2px;
 }
 .main .route .route__description {
   display: flex;
   flex-direction: column;
+  width: 100%;
   background: #000000;
   background: linear-gradient(-135deg, #000000 0%, rgba(44, 44, 44, 0.71) 100%);
   padding: 15px;
@@ -407,6 +409,75 @@
   line-height: 16px;
 }
 
+.main .race {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--gradient-1);
+  background: var(--gradient-2);
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+  max-height: 275px;
+  border-radius: 2px;
+  margin-bottom: 80px;
+  padding: 15px;
+}
+
+.main .race .input {
+  display: flex;
+  gap: 8px;
+  background: var(--white);
+  padding: 8px;
+}
+
+.main .race .input span {
+  color: #8b8b8b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.main .race .input input {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--dark-purple);
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.main .race .race__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main .race .menu__option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.main .race .menu__option p,
+.main .race .menu__option span {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.main .race .menu__option:active p,
+.main .race .menu__option:active span {
+  color: white;
+}
+
+.main .race .menu__option:hover p,
+.main .race .menu__option:hover span {
+  color: white;
+}
+
 /* FOOTER */
 
 .footer {
@@ -463,6 +534,36 @@
   background: transparent;
   border: none;
   cursor: pointer;
+}
+
+.button--icon {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.32));
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.button--icon i {
+  font-size: 24px;
+}
+
+.purple {
+  background: var(--purple);
+}
+
+.bright {
+  background: var(--blue);
+}
+
+.blue {
+  background: var(--dark-blue);
+}
+
+.gray {
+  background: var(--gray);
 }
 
 * {
