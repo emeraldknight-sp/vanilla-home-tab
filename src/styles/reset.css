@@ -55,13 +55,15 @@ body, select, input, button, textarea {
   --purple: #7b1fa2;
   --dark-purple: #431c60;
   --blue: #aab5e0;
-  --dark-purple: #4527a0;
+	--dark-blue: #5371E6;
+  --royal-blue: #4527a0;
   --white: #ffffff;
+	--gray: #8B8B8B;
   --black: #272727;
   --green: #8bc34a;
 
-  --gradient: rgb(69,39,160);
-  --gradient: linear-gradient(45deg, rgba(69,39,160,1) 0%, rgba(123,31,162,1) 35%);
+  --gradient-1: rgb(69,39,160);
+  --gradient-2: linear-gradient(45deg, rgba(69,39,160,1) 0%, rgba(123,31,162,1) 35%);
 
 	--text-h1: 1.5rem;
 	--line-height-h1: 2rem;
