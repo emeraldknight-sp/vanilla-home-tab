@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- TITLE -->
     <title>Home Tab - Teste Técnico</title>
-
-    <!-- META TAGS -->
     <meta
       name="description"
       content="Página desenvolvida para avaliação de teste técnico na empresa Falqon, criado e desenvolvido com Vanilla.JS"
@@ -16,8 +13,6 @@
     <meta name="generator" content="N/A" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <!-- STYELESHEETS -->
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
 
@@ -36,30 +31,30 @@
         <article>
           <h1>Let's get you there...</h1>
           <div class="box">
-            <div class="box__header">
-              <div><p>Boarding now</p></div>
-              <div><p>Gate closes at 10:00</p></div>
+            <div class="board-gate">
+              <div class="board"><p>Boarding now</p></div>
+              <div class="gate"><p>Gate closes at 10:00</p></div>
             </div>
-            <div class="box__info">
-              <div class="box__route">
-                <div>
+            <div class="info">
+              <div class="way">
+                <div class="starting-point">
                   <h2>LHR</h2>
                   <p>London, England</p>
                 </div>
-                <div>
-                  <div class="divider"></div>
+                <div class="divider">
+                  <div class="line"></div>
                   <i class="fa-solid fa-plane"></i>
-                  <div class="divider"></div>
+                  <div class="line"></div>
                 </div>
-                <div>
+                <div class="arrival-point">
                   <h2>JFK</h2>
                   <p>New York City, USA</p>
                 </div>
               </div>
-              <div>
-                <div class="divider"></div>
+              <div class="divider">
+                <div class="line"></div>
               </div>
-              <div class="box__details">
+              <div class="details">
                 <div>
                   <p>Flight</p>
                   <p>VA2501</p>
@@ -77,8 +72,8 @@
                   <p>10.25</p>
                 </div>
                 <div>
-                  <button>
-                    <span>View boarding pass</span>
+                  <button class="button purple--dark">
+                    View boarding pass
                   </button>
                 </div>
               </div>
@@ -92,133 +87,141 @@
       <section class="container">
         <div class="plans">
           <h3>Your Plans</h3>
-          <button type="button" class="button">
+          <button type="button" class="button btn--lg purple round">
             <i class="fa-solid fa-plus"></i>
           </button>
         </div>
-        <!-- BOX HOTEL -->
-        <article class="hotel">
-          <div class="hotel__description">
-            <div class="description__name">
-              <h3>The James Hotel</h3>
-              <div>
+        <div class="card_group">
+          <!-- BOX HOTEL -->
+          <article class="card hotel">
+            <div class="card__info">
+              <div class="title">
+                <h3>The James Hotel</h3>
                 <span>4 Nights</span>
               </div>
-            </div>
-            <div class="divider__group">
-              <div class="divider"></div>
-            </div>
-            <div class="description__location">
-              <i class="fa-solid fa-location-dot"></i>
-              <p>36 W 38th St, New York, NY 10018</p>
-            </div>
-          </div>
-        </article>
-        <!-- BOX ROUTE -->
-        <article class="route">
-          <div class="route__description">
-            <div class="description description__message">
-              <figure>
-                <img src="../src/assets/img/avatar.png" alt="user avatar" />
-              </figure>
-              <p>
-                Ryan from Corey Car Services is confirmed for pickup at
-                <span>15.40</span>.
-              </p>
-            </div>
-            <div class="description description__pickup">
-              <div>
-                <h3>Pickup</h3>
-                <p>John F. Kennedy International Aiport</p>
+              <div class="divider">
+                <div class="line"></div>
               </div>
-              <button class="button">
-                <i class="fa-solid fa-pen"></i>
-              </button>
-            </div>
-            <div class="description description__destination">
-              <div>
-                <h3>Destination</h3>
-                <p>36 W 38th Street New York, NY 10018</p>
+              <div class="details">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>36 W 38th St, New York, NY 10018</p>
               </div>
-              <button class="button">
-                <i class="fa-solid fa-pen"></i>
-              </button>
             </div>
-          </div>
-        </article>
-        <!-- BOX DESTINATION -->
-        <article class="destination">
-          <div class="destination__description">
-            <h3>Lady Liberty Tour</h3>
-            <div class="divider__group">
-              <div class="divider"></div>
+          </article>
+          <!-- BOX ROUTE -->
+          <article class="card route">
+            <div class="gradient">
+              <div class="description message">
+                <figure>
+                  <img src="../src/assets/img/avatar.png" alt="user avatar" />
+                </figure>
+                <p>
+                  Ryan from Corey Car Services is confirmed for pickup at
+                  <span>15.40</span>.
+                </p>
+              </div>
+              <div class="description pickup">
+                <div>
+                  <h3>Pickup</h3>
+                  <p>John F. Kennedy International Aiport</p>
+                </div>
+                <button class="button filter btn--md purple round">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+              </div>
+              <div class="description destination">
+                <div>
+                  <h3>Destination</h3>
+                  <p>36 W 38th Street New York, NY 10018</p>
+                </div>
+                <button class="button filter btn--md purple round">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+              </div>
             </div>
-            <span>
-              <i class="fa-solid fa-clock"></i>
-              <p>Thursday 4th Jan at 09.15</p>
-            </span>
-          </div>
-        </article>
-        <!-- BOX RACE -->
-        <article class="race">
-          <div class="input">
-            <span>From</span>
-            <input type="text" />
-          </div>
-          <div class="input">
-            <span>To</span>
-            <input type="text" />
-          </div>
-          <div class="divider__group">
-            <div class="divider"></div>
-          </div>
-          <div class="race__menu">
-            <div class="menu__option">
-              <button type="button" class="button button--icon round purple">
-                <i class="fa-solid fa-taxi"></i>
-              </button>
-              <span>$60-$105</span>
-              <p>TAXI</p>
+          </article>
+          <!-- BOX DESTINATION -->
+          <article class="card liberty">
+            <div class="card__info">
+              <div class="title">
+                <h3>Lady Liberty Tour</h3>
+              </div>
+              <div class="divider">
+                <div class="line"></div>
+              </div>
+              <div class="details">
+                <i class="fa-solid fa-clock"></i>
+                <p>Thursday 4th Jan at 09.15</p>
+              </div>
             </div>
-            <div class="menu__option">
-              <button type="button" class="button button--icon round bright">
-                <i class="fa-solid fa-train-subway"></i>
-              </button>
-              <span>$20-$30</span>
-              <p>SUBWAY</p>
+          </article>
+          <!-- BOX RACE -->
+          <article class="card race">
+            <div class="input">
+              <span>From</span>
+              <input type="text" />
             </div>
-            <div class="menu__option">
-              <button type="button" class="button button--icon round blue">
-                <i class="fa-solid fa-taxi"></i>
-              </button>
-              <span>$45-$65</span>
-              <p>UBER</p>
+            <div class="input">
+              <span>To</span>
+              <input type="text" />
             </div>
-            <div class="menu__option">
-              <button type="button" class="button button--icon round gray">
-                <i class="fa-solid fa-taxi"></i>
-              </button>
-              <span>$45-$65</span>
-              <p>UBER</p>
+            <div class="divider">
+              <div class="line"></div>
             </div>
-          </div>
-        </article>
+            <div class="menu">
+              <div class="menu item">
+                <button
+                  type="button"
+                  class="button filter btn--lg round purple"
+                >
+                  <i class="fa-solid fa-taxi"></i>
+                </button>
+                <span>$60-$105</span>
+                <p>TAXI</p>
+              </div>
+              <div class="menu item">
+                <button
+                  type="button"
+                  class="button filter btn--lg round bright"
+                >
+                  <i class="fa-solid fa-train-subway"></i>
+                </button>
+                <span>$20-$30</span>
+                <p>SUBWAY</p>
+              </div>
+              <div class="menu item">
+                <button type="button" class="button filter btn--lg round blue">
+                  <i class="fa-solid fa-taxi"></i>
+                </button>
+                <span>$45-$65</span>
+                <p>UBER</p>
+              </div>
+              <div class="menu item">
+                <button type="button" class="button filter btn--lg round gray">
+                  <i class="fa-solid fa-taxi"></i>
+                </button>
+                <span>$45-$65</span>
+                <p>UBER</p>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->
     <footer id="footer" class="footer">
       <section class="container">
         <nav class="menu">
-          <button type="button" class="button">
+          <button type="button" class="button btn--sm">
             <i class="fa-solid fa-plane"></i>
           </button>
-          <button type="button" class="button">
+          <button type="button" class="button btn--sm">
             <i class="fa-solid fa-compass"></i>
           </button>
-          <button type="button" class="button">
+          <button type="button" class="button btn--sm">
             <i class="fa-solid fa-user"></i>
           </button>
-          <button type="button" class="button">
+          <button type="button" class="button btn--sm">
             <i class="fa-solid fa-heart"></i>
           </button>
         </nav>
