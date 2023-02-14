@@ -54,28 +54,41 @@ body, select, input, button, textarea {
 :root {
   --purple: #7b1fa2;
   --dark-purple: #431c60;
+	--royal-purple: #261136;
+
   --blue: #aab5e0;
 	--dark-blue: #5371E6;
   --royal-blue: #4527a0;
+
+  --black: #272727;
   --white: #ffffff;
 	--gray: #8B8B8B;
-  --black: #272727;
+	
   --green: #8bc34a;
 
-  --gradient-1: rgb(69,39,160);
-  --gradient-2: linear-gradient(45deg, rgba(69,39,160,1) 0%, rgba(123,31,162,1) 35%);
+  --df-color-1: var(--royal-blue);
+	--df-color-2: var(--purple);
+	--df-color-3: var(--black);
+
+  --gradient-1: linear-gradient(45deg, #4527a0 0%, #7b1fa2 35%);
+	--gradient-2: linear-gradient(-139deg, #7b1fa2 0%, #4527a0 100%);
+	--gradient-3: linear-gradient(-135deg, #000000 0%, rgba(44,44,44,0.71 ) 100%);
 
 	--text-h1: 1.5rem;
 	--line-height-h1: 2rem;
+
 	--text-h2: 1.25rem;
 	--line-height-h2: 1.75rem;
+
 	--text-h3: 1.125rem;
 	--line-height-h3: 1.75rem;
 
 	--text-md: 1rem;
 	--line-height-md: 1.5rem;
+
 	--text-sm: 0.875rem;
 	--line-height-sm: 1.25rem;
+
 	--text-xs: 0.75rem;
 	--line-height-xs: 1rem;
 
