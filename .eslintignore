@@ -24,4 +24,5 @@ yarn-error.log*
 .vercel
 
 # globals styles
-/src/assets/styles/reset.css
+src/styles/reset.css
+
