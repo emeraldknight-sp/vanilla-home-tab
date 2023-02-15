@@ -4,15 +4,33 @@
     <!-- FAVICON -->
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../public/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../public/favicon-16x16.png"
+    />
     <link rel="manifest" href="../public/site.webmanifest" />
-    <link rel="mask-icon" href="../public/safari-pinned-tab.svg" color="#2f6473" />
+    <link
+      rel="mask-icon"
+      href="../public/safari-pinned-tab.svg"
+      color="#2f6473"
+    />
     <!-- META TAGS -->
     <meta
-    name="description"
-    content="Página desenvolvida para avaliação de teste técnico na empresa Falqon, criado e desenvolvido com Vanilla.JS"
+      name="description"
+      content="Página desenvolvida para avaliação de teste técnico na empresa Falqon, criado e desenvolvido com Vanilla.JS"
     />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
@@ -21,7 +39,7 @@
     <meta name="generator" content="N/A" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
+
     <title>Home Tab - Teste Técnico</title>
     <!-- STYLE -->
     <link rel="stylesheet" href="./styles/reset.css" />
@@ -84,7 +102,7 @@
                     <p>10.25</p>
                   </div>
                   <div>
-                    <button class="button purple--dark">
+                    <button id="boarding" class="button purple--dark">
                       View boarding pass
                     </button>
                   </div>
@@ -99,7 +117,7 @@
         <section class="container">
           <div class="plans">
             <h3>Your Plans</h3>
-            <button type="button" class="button btn--lg purple round">
+            <button type="button" id="plus" class="button btn--lg purple round">
               <i class="fa-solid fa-plus"></i>
             </button>
           </div>
@@ -129,7 +147,7 @@
                   </figure>
                   <p>
                     Ryan from Corey Car Services is confirmed for pickup at
-                    <span>15.40</span>.
+                    <span id="price">15.40</span>.
                   </p>
                 </div>
                 <div class="description pickup">
@@ -137,7 +155,11 @@
                     <h3>Pickup</h3>
                     <p>John F. Kennedy International Aiport</p>
                   </div>
-                  <button class="button filter btn--md purple round">
+                  <button
+                    type="button"
+                    id="edit-pickup"
+                    class="button filter btn--md purple round"
+                  >
                     <i class="fa-solid fa-pen"></i>
                   </button>
                 </div>
@@ -146,7 +168,11 @@
                     <h3>Destination</h3>
                     <p>36 W 38th Street New York, NY 10018</p>
                   </div>
-                  <button class="button filter btn--md purple round">
+                  <button
+                    type="button"
+                    id="edit-destination"
+                    class="button filter btn--md purple round"
+                  >
                     <i class="fa-solid fa-pen"></i>
                   </button>
                 </div>
@@ -180,7 +206,7 @@
               <div class="divider">
                 <div class="line"></div>
               </div>
-              <div class="menu">
+              <div id="menu-race" class="menu">
                 <div class="menu item">
                   <button
                     type="button"
@@ -229,10 +255,10 @@
       <!-- FOOTER -->
       <footer id="footer" class="footer">
         <section class="container">
-          <nav class="menu">
+          <nav id="nav-bar" class="menu">
             <button type="button" class="button btn--sm">
               <i class="fa-solid fa-plane"></i>
-            </button>
+            </button> 
             <button type="button" class="button btn--sm">
               <i class="fa-solid fa-compass"></i>
             </button>
@@ -245,6 +271,7 @@
           </nav>
         </section>
       </footer>
+      <script src="./js/main.js"></script>
     </div>
   </body>
 </html>

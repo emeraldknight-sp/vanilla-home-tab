@@ -236,6 +236,9 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
+}
+
+#price {
   color: var(--green);
 }
 
@@ -354,6 +357,10 @@
 .menu .item p,
 .menu .item span {
   color: var(--blue);
+}
+
+.menu .item .selected {
+  color: var(--white);
 }
 
 /* FOOTER */
